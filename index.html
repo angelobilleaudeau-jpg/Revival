@@ -1,0 +1,1971 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Revival</title>
+
+<style>
+/* =========================================================
+   2019-STYLE REVIVAL
+   GitHub Pages / Browser Only
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    font-size: 13px;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 48px;
+    background: #333;
+    border-bottom: 1px solid #222;
+    color: white;
+}
+
+.header-inner {
+    max-width: 1200px;
+    height: 48px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    padding: 0 18px;
+}
+
+.nav {
+    height: 48px;
+    display: flex;
+}
+
+.nav button {
+    height: 48px;
+
+    padding: 0 14px;
+
+    background: transparent;
+    border: 0;
+
+    color: #ddd;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+.nav button:hover,
+.nav button.active {
+    background: #444;
+    color: white;
+}
+
+.account-area {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding-right: 15px;
+
+    color: #ddd;
+}
+
+.account-area button {
+    background: none;
+    border: 0;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+/* ================= SUB NAV ================= */
+
+.subnav {
+    height: 38px;
+
+    background: white;
+
+    border-bottom: 1px solid #ccc;
+}
+
+.subnav-inner {
+    max-width: 1200px;
+
+    height: 38px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.subnav button {
+    border: 0;
+    background: none;
+
+    color: #555;
+
+    cursor: pointer;
+}
+
+.subnav button:hover {
+    color: #1675b9;
+}
+
+/* ================= PAGE ================= */
+
+.page {
+    max-width: 1200px;
+
+    width: calc(100% - 30px);
+
+    margin: auto;
+}
+
+/* ================= PANELS ================= */
+
+.panel {
+    background: white;
+
+    border: 1px solid #ccc;
+
+    margin-top: 20px;
+}
+
+.panel-title {
+    padding: 10px 13px;
+
+    background: #ddd;
+
+    border-bottom: 1px solid #c5c5c5;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ================= HOME ================= */
+
+.welcome {
+    margin-top: 20px;
+
+    padding: 22px;
+
+    background: white;
+
+    border: 1px solid #ccc;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.welcome h1 {
+    margin: 0 0 8px;
+
+    font-size: 25px;
+
+    font-weight: normal;
+}
+
+.welcome p {
+    margin: 0;
+
+    color: #777;
+}
+
+.blue-button {
+    background: #1675b9;
+
+    border: 1px solid #105a8d;
+
+    color: white;
+
+    padding: 9px 17px;
+
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.blue-button:hover {
+    background: #12659f;
+}
+
+/* ================= COLUMNS ================= */
+
+.columns {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) 280px;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+/* ================= SECTION ================= */
+
+.section-header {
+    background: #ddd;
+
+    border: 1px solid #c5c5c5;
+
+    padding: 10px 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.section-header h2 {
+    margin: 0;
+
+    font-size: 17px;
+
+    font-weight: normal;
+}
+
+.section-header button {
+    background: none;
+
+    border: 0;
+
+    color: #1675b9;
+
+    cursor: pointer;
+}
+
+/* ================= GAMES ================= */
+
+.game-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.game {
+    background: white;
+
+    border: 1px solid #ccc;
+
+    padding: 10px;
+}
+
+.game-image {
+    height: 135px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #777,
+            #aaa
+        );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.game h3 {
+    margin: 10px 0 5px;
+
+    font-size: 15px;
+}
+
+.game p {
+    color: #777;
+
+    min-height: 30px;
+}
+
+.play-button {
+    background: #62a844;
+
+    border: 1px solid #4b8b35;
+
+    color: white;
+
+    padding: 7px 15px;
+
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+/* ================= CATALOG ================= */
+
+.catalog-grid {
+    background: white;
+
+    border: 1px solid #ccc;
+
+    padding: 12px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.item {
+    border: 1px solid #ccc;
+
+    background: #fafafa;
+
+    padding: 8px;
+
+    text-align: center;
+}
+
+.item-image {
+    height: 125px;
+
+    background: #ddd;
+
+    border: 1px solid #c4c4c4;
+
+    margin-bottom: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #888;
+}
+
+.item-name {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.item-price {
+    color: #777;
+
+    margin-bottom: 8px;
+}
+
+.buy-button,
+.equip-button {
+    width: 100%;
+
+    padding: 7px;
+
+    border: 1px solid #aaa;
+
+    background: #eee;
+
+    cursor: pointer;
+}
+
+.buy-button:hover,
+.equip-button:hover {
+    background: #ddd;
+}
+
+/* ================= PROFILE ================= */
+
+.profile {
+    padding: 15px;
+
+    display: flex;
+
+    gap: 12px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+
+    background: #ddd;
+
+    border: 1px solid #bbb;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+.profile h3 {
+    margin: 3px 0 6px;
+
+    font-size: 15px;
+}
+
+.profile p {
+    margin: 0 0 7px;
+
+    color: #777;
+}
+
+/* ================= STATS ================= */
+
+.stat {
+    padding: 10px 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eee;
+}
+
+/* ================= NEWS ================= */
+
+.news {
+    display: block;
+
+    padding: 11px 12px;
+
+    color: #1675b9;
+
+    border-bottom: 1px solid #eee;
+}
+
+/* ================= AVATAR ================= */
+
+.avatar-layout {
+    display: grid;
+
+    grid-template-columns:
+        340px minmax(0, 1fr);
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.avatar-preview {
+    background: white;
+
+    border: 1px solid #ccc;
+}
+
+.avatar-stage {
+    height: 430px;
+
+    background:
+        radial-gradient(
+            circle,
+            #fafafa,
+            #ddd
+        );
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Block character */
+
+.character {
+    width: 150px;
+    height: 300px;
+
+    position: relative;
+}
+
+.head {
+    width: 85px;
+    height: 85px;
+
+    position: absolute;
+
+    top: 0;
+    left: 32px;
+
+    background: #f0c7a5;
+
+    border: 1px solid #999;
+}
+
+.body {
+    width: 100px;
+    height: 115px;
+
+    position: absolute;
+
+    top: 85px;
+    left: 25px;
+
+    background: #1675b9;
+
+    border: 1px solid #555;
+}
+
+.arm {
+    width: 25px;
+    height: 105px;
+
+    position: absolute;
+
+    top: 90px;
+
+    background: #f0c7a5;
+
+    border: 1px solid #999;
+}
+
+.arm.left {
+    left: 0;
+}
+
+.arm.right {
+    right: 0;
+}
+
+.leg {
+    width: 45px;
+    height: 105px;
+
+    position: absolute;
+
+    top: 200px;
+
+    background: #333;
+
+    border: 1px solid #555;
+}
+
+.leg.left {
+    left: 25px;
+}
+
+.leg.right {
+    right: 25px;
+}
+
+/* ================= TABS ================= */
+
+.tabs {
+    display: flex;
+
+    border-bottom: 1px solid #ccc;
+
+    margin-bottom: 15px;
+}
+
+.tab {
+    padding: 9px 15px;
+
+    background: #eee;
+
+    border:
+        1px solid #ccc;
+
+    border-bottom: 0;
+
+    cursor: pointer;
+}
+
+.tab.active {
+    background: white;
+
+    font-weight: bold;
+}
+
+/* ================= ITEM GRID ================= */
+
+.avatar-items {
+    background: white;
+
+    border: 1px solid #ccc;
+
+    padding: 15px;
+}
+
+.avatar-item-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+/* ================= LOGIN ================= */
+
+.login-box {
+    max-width: 400px;
+
+    margin: 50px auto;
+
+    background: white;
+
+    border: 1px solid #ccc;
+
+    padding: 20px;
+}
+
+.login-box input {
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #bbb;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    margin-top: 35px;
+
+    padding: 25px 0;
+
+    background: #ddd;
+
+    border-top: 1px solid #c5c5c5;
+
+    color: #777;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .header-inner {
+        height: auto;
+
+        flex-wrap: wrap;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .nav {
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+    .account-area {
+        margin-left: auto;
+    }
+
+    .columns,
+    .avatar-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .game-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .avatar-item-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .welcome {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <a
+            href="#home"
+            class="logo"
+            onclick="showPage('home')"
+        >
+            REVIVAL
+        </a>
+
+        <nav class="nav">
+
+            <button
+                class="active"
+                data-page="home"
+            >
+                Home
+            </button>
+
+            <button data-page="profile">
+                Profile
+            </button>
+
+            <button data-page="avatar">
+                Avatar
+            </button>
+
+            <button data-page="catalog">
+                Catalog
+            </button>
+
+            <button data-page="games">
+                Games
+            </button>
+
+        </nav>
+
+        <div class="account-area">
+
+            <span id="currency">
+                Tix: 1,000
+            </span>
+
+            <button
+                onclick="login()"
+            >
+                Login
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SECONDARY NAV
+===================================================== -->
+
+<div class="subnav">
+
+    <div class="subnav-inner">
+
+        <button onclick="showPage('home')">
+            Home
+        </button>
+
+        <button onclick="showPage('games')">
+            Discover
+        </button>
+
+        <button onclick="showPage('catalog')">
+            Catalog
+        </button>
+
+        <button onclick="showPage('avatar')">
+            Avatar
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<main
+    id="home"
+    class="page"
+>
+
+    <section class="welcome">
+
+        <div>
+
+            <h1>
+                Welcome to Revival
+            </h1>
+
+            <p>
+                Explore games, customize your avatar,
+                collect items, and build your profile.
+            </p>
+
+        </div>
+
+        <button
+            class="blue-button"
+            onclick="showPage('avatar')"
+        >
+            Customize Avatar
+        </button>
+
+    </section>
+
+
+    <div class="columns">
+
+        <section>
+
+            <div class="section-header">
+
+                <h2>
+                    Featured Games
+                </h2>
+
+                <button
+                    onclick="showPage('games')"
+                >
+                    See All
+                </button>
+
+            </div>
+
+
+            <div class="game-grid">
+
+                <article class="game">
+
+                    <div class="game-image">
+                        CLASSIC
+                    </div>
+
+                    <h3>
+                        Classic Baseplate
+                    </h3>
+
+                    <p>
+                        Build and explore.
+                    </p>
+
+                    <button
+                        class="play-button"
+                        onclick="playGame('Classic Baseplate')"
+                    >
+                        Play
+                    </button>
+
+                </article>
+
+
+                <article class="game">
+
+                    <div class="game-image">
+                        BATTLE
+                    </div>
+
+                    <h3>
+                        Brick Battle
+                    </h3>
+
+                    <p>
+                        A classic browser battle.
+                    </p>
+
+                    <button
+                        class="play-button"
+                        onclick="playGame('Brick Battle')"
+                    >
+                        Play
+                    </button>
+
+                </article>
+
+
+                <article class="game">
+
+                    <div class="game-image">
+                        TOWN
+                    </div>
+
+                    <h3>
+                        Town
+                    </h3>
+
+                    <p>
+                        Hang out with friends.
+                    </p>
+
+                    <button
+                        class="play-button"
+                        onclick="playGame('Town')"
+                    >
+                        Play
+                    </button>
+
+                </article>
+
+            </div>
+
+
+            <div class="section-header">
+
+                <h2>
+                    Catalog
+                </h2>
+
+                <button
+                    onclick="showPage('catalog')"
+                >
+                    See All
+                </button>
+
+            </div>
+
+
+            <div
+                id="homeCatalog"
+                class="catalog-grid"
+            ></div>
+
+        </section>
+
+
+        <aside>
+
+            <div class="panel">
+
+                <div class="panel-title">
+                    My Profile
+                </div>
+
+                <div class="profile">
+
+                    <div class="profile-avatar">
+                        AVATAR
+                    </div>
+
+                    <div>
+
+                        <h3 id="profileName">
+                            Guest
+                        </h3>
+
+                        <p>
+                            Member
+                        </p>
+
+                        <button
+                            class="blue-button"
+                            onclick="showPage('avatar')"
+                        >
+                            Edit Avatar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-title">
+                    Statistics
+                </div>
+
+                <div class="stat">
+                    <span>Friends</span>
+                    <strong>0</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Inventory</span>
+                    <strong id="inventoryCount">
+                        0
+                    </strong>
+                </div>
+
+                <div class="stat">
+                    <span>Tix</span>
+                    <strong id="sideCurrency">
+                        1,000
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-title">
+                    News
+                </div>
+
+                <div class="news">
+                    Welcome to Revival
+                </div>
+
+                <div class="news">
+                    Browser games are coming soon
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     AVATAR
+===================================================== -->
+
+<main
+    id="avatar"
+    class="page"
+    style="display:none;"
+>
+
+    <div class="section-header">
+
+        <h2>
+            Avatar
+        </h2>
+
+        <button
+            class="blue-button"
+            onclick="saveAvatar()"
+        >
+            Save
+        </button>
+
+    </div>
+
+
+    <div class="avatar-layout">
+
+        <section class="avatar-preview">
+
+            <div class="panel-title">
+                Avatar
+            </div>
+
+            <div class="avatar-stage">
+
+                <div class="character">
+
+                    <div class="head"></div>
+
+                    <div class="body"></div>
+
+                    <div class="arm left"></div>
+
+                    <div class="arm right"></div>
+
+                    <div class="leg left"></div>
+
+                    <div class="leg right"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="avatar-items">
+
+            <div class="tabs">
+
+                <button class="tab active">
+                    Body
+                </button>
+
+                <button class="tab">
+                    Clothing
+                </button>
+
+                <button class="tab">
+                    Accessories
+                </button>
+
+                <button class="tab">
+                    Faces
+                </button>
+
+            </div>
+
+
+            <div
+                id="avatarItems"
+                class="avatar-item-grid"
+            ></div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     CATALOG
+===================================================== -->
+
+<main
+    id="catalog"
+    class="page"
+    style="display:none;"
+>
+
+    <div class="section-header">
+
+        <h2>
+            Catalog
+        </h2>
+
+        <span>
+            Browse Items
+        </span>
+
+    </div>
+
+
+    <div
+        id="catalogItems"
+        class="catalog-grid"
+    ></div>
+
+</main>
+
+
+<!-- =====================================================
+     GAMES
+===================================================== -->
+
+<main
+    id="games"
+    class="page"
+    style="display:none;"
+>
+
+    <div class="section-header">
+
+        <h2>
+            Games
+        </h2>
+
+        <span>
+            Browser Games
+        </span>
+
+    </div>
+
+
+    <div class="game-grid">
+
+        <article class="game">
+
+            <div class="game-image">
+                CLASSIC
+            </div>
+
+            <h3>
+                Classic Baseplate
+            </h3>
+
+            <p>
+                Browser-based building game.
+            </p>
+
+            <button
+                class="play-button"
+                onclick="startBrowserGame()"
+            >
+                Play
+            </button>
+
+        </article>
+
+
+        <article class="game">
+
+            <div class="game-image">
+                BRICK
+            </div>
+
+            <h3>
+                Brick Battle
+            </h3>
+
+            <p>
+                Retro browser battle.
+            </p>
+
+            <button
+                class="play-button"
+                onclick="startBrowserGame()"
+            >
+                Play
+            </button>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     PROFILE
+===================================================== -->
+
+<main
+    id="profile"
+    class="page"
+    style="display:none;"
+>
+
+    <div class="panel">
+
+        <div class="panel-title">
+            Profile
+        </div>
+
+        <div class="profile">
+
+            <div class="profile-avatar">
+                AVATAR
+            </div>
+
+            <div>
+
+                <h2 id="largeUsername">
+                    Guest
+                </h2>
+
+                <p>
+                    Welcome to your profile.
+                </p>
+
+                <p>
+                    Tix:
+                    <strong id="profileCurrency">
+                        1,000
+                    </strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="page">
+
+        Revival &copy; 2026
+
+        &nbsp; | &nbsp;
+
+        Terms
+
+        &nbsp; | &nbsp;
+
+        Privacy
+
+    </div>
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   REVIVAL JAVASCRIPT
+   ========================================================= */
+
+
+/* ================= USER ================= */
+
+let user = {
+
+    username: "Guest",
+
+    tix: 1000,
+
+    inventory: [],
+
+    avatar: {
+
+        body: "Classic Body",
+
+        shirt: "Blue Shirt",
+
+        pants: "Classic Pants",
+
+        face: "Classic Face",
+
+        accessory: null
+
+    }
+
+};
+
+
+/* ================= CATALOG ================= */
+
+const catalog = [
+
+    {
+        id: 1,
+        name: "Classic Body",
+        price: 0,
+        type: "Body"
+    },
+
+    {
+        id: 2,
+        name: "Blue Shirt",
+        price: 0,
+        type: "Shirt"
+    },
+
+    {
+        id: 3,
+        name: "Classic Pants",
+        price: 50,
+        type: "Pants"
+    },
+
+    {
+        id: 4,
+        name: "Classic Face",
+        price: 25,
+        type: "Face"
+    },
+
+    {
+        id: 5,
+        name: "Retro Hat",
+        price: 100,
+        type: "Accessory"
+    },
+
+    {
+        id: 6,
+        name: "Blue Cap",
+        price: 75,
+        type: "Accessory"
+    },
+
+    {
+        id: 7,
+        name: "Red Cap",
+        price: 125,
+        type: "Accessory"
+    },
+
+    {
+        id: 8,
+        name: "Classic Fedora",
+        price: 200,
+        type: "Accessory"
+    }
+
+];
+
+
+/* ================= STORAGE ================= */
+
+function saveData() {
+
+    localStorage.setItem(
+        "revivalUser",
+        JSON.stringify(user)
+    );
+
+}
+
+
+function loadData() {
+
+    const saved =
+        localStorage.getItem(
+            "revivalUser"
+        );
+
+    if (saved) {
+
+        try {
+
+            user =
+                JSON.parse(saved);
+
+        } catch {
+
+            console.log(
+                "Could not load saved data."
+            );
+
+        }
+
+    }
+
+}
+
+
+/* ================= PAGE NAVIGATION ================= */
+
+function showPage(page) {
+
+    const pages = [
+        "home",
+        "avatar",
+        "catalog",
+        "games",
+        "profile"
+    ];
+
+    pages.forEach(id => {
+
+        const element =
+            document.getElementById(id);
+
+        if (element) {
+
+            element.style.display =
+                id === page
+                    ? "block"
+                    : "none";
+
+        }
+
+    });
+
+
+    document
+        .querySelectorAll(".nav button")
+        .forEach(button => {
+
+            button.classList.toggle(
+                "active",
+                button.dataset.page === page
+            );
+
+        });
+
+
+    window.scrollTo(0, 0);
+
+}
+
+
+/* ================= UI ================= */
+
+function updateUI() {
+
+    document.getElementById(
+        "currency"
+    ).textContent =
+        "Tix: " +
+        user.tix.toLocaleString();
+
+
+    document.getElementById(
+        "sideCurrency"
+    ).textContent =
+        user.tix.toLocaleString();
+
+
+    document.getElementById(
+        "profileCurrency"
+    ).textContent =
+        user.tix.toLocaleString();
+
+
+    document.getElementById(
+        "inventoryCount"
+    ).textContent =
+        user.inventory.length;
+
+
+    document.getElementById(
+        "profileName"
+    ).textContent =
+        user.username;
+
+
+    document.getElementById(
+        "largeUsername"
+    ).textContent =
+        user.username;
+
+}
+
+
+/* ================= CATALOG ================= */
+
+function renderCatalog() {
+
+    const containers = [
+
+        document.getElementById(
+            "catalogItems"
+        ),
+
+        document.getElementById(
+            "homeCatalog"
+        )
+
+    ];
+
+
+    containers.forEach(container => {
+
+        if (!container) return;
+
+        container.innerHTML = "";
+
+
+        catalog.forEach(item => {
+
+            const owned =
+                user.inventory.includes(
+                    item.id
+                );
+
+
+            const element =
+                document.createElement(
+                    "div"
+                );
+
+            element.className =
+                "item";
+
+
+            element.innerHTML = `
+
+                <div class="item-image">
+                    ${item.type}
+                </div>
+
+                <div class="item-name">
+                    ${item.name}
+                </div>
+
+                <div class="item-price">
+                    ${
+                        item.price === 0
+                            ? "Free"
+                            : item.price + " Tix"
+                    }
+                </div>
+
+                ${
+                    owned
+                        ? `
+                            <button
+                                class="equip-button"
+                                onclick="equipItem(${item.id})"
+                            >
+                                Equip
+                            </button>
+                          `
+                        : `
+                            <button
+                                class="buy-button"
+                                onclick="buyItem(${item.id})"
+                            >
+                                Buy
+                            </button>
+                          `
+                }
+
+            `;
+
+
+            container.appendChild(
+                element
+            );
+
+        });
+
+    });
+
+}
+
+
+/* ================= BUY ================= */
+
+function buyItem(id) {
+
+    const item =
+        catalog.find(
+            item => item.id === id
+        );
+
+
+    if (!item) return;
+
+
+    if (user.inventory.includes(id)) {
+
+        alert(
+            "You already own this item."
+        );
+
+        return;
+
+    }
+
+
+    if (user.tix < item.price) {
+
+        alert(
+            "You do not have enough Tix."
+        );
+
+        return;
+
+    }
+
+
+    const confirmation =
+        confirm(
+            `Buy ${item.name} for ${
+                item.price
+            } Tix?`
+        );
+
+
+    if (!confirmation) return;
+
+
+    user.tix -= item.price;
+
+    user.inventory.push(id);
+
+
+    saveData();
+
+    updateUI();
+
+    renderCatalog();
+
+
+    alert(
+        `${item.name} has been added to your inventory.`
+    );
+
+}
+
+
+/* ================= EQUIP ================= */
+
+function equipItem(id) {
+
+    const item =
+        catalog.find(
+            item => item.id === id
+        );
+
+
+    if (!item) return;
+
+
+    if (!user.inventory.includes(id)) {
+
+        alert(
+            "You do not own this item."
+        );
+
+        return;
+
+    }
+
+
+    switch (item.type) {
+
+        case "Body":
+            user.avatar.body =
+                item.name;
+            break;
+
+        case "Shirt":
+            user.avatar.shirt =
+                item.name;
+            break;
+
+        case "Pants":
+            user.avatar.pants =
+                item.name;
+            break;
+
+        case "Face":
+            user.avatar.face =
+                item.name;
+            break;
+
+        case "Accessory":
+            user.avatar.accessory =
+                item.name;
+            break;
+
+    }
+
+
+    saveData();
+
+    alert(
+        item.name + " equipped!"
+    );
+
+}
+
+
+/* ================= AVATAR ================= */
+
+function renderAvatarItems() {
+
+    const container =
+        document.getElementById(
+            "avatarItems"
+        );
+
+
+    container.innerHTML = "";
+
+
+    catalog.forEach(item => {
+
+        if (
+            !user.inventory.includes(
+                item.id
+            )
+        ) return;
+
+
+        const element =
+            document.createElement(
+                "div"
+            );
+
+
+        element.className =
+            "item";
+
+
+        element.innerHTML = `
+
+            <div class="item-image">
+                ${item.type}
+            </div>
+
+            <div class="item-name">
+                ${item.name}
+            </div>
+
+            <button
+                class="equip-button"
+                onclick="equipItem(${item.id})"
+            >
+                Equip
+            </button>
+
+        `;
+
+
+        container.appendChild(
+            element
+        );
+
+    });
+
+
+    if (
+        user.inventory.length === 0
+    ) {
+
+        container.innerHTML = `
+
+            <div style="
+                grid-column: 1 / -1;
+                padding: 30px;
+                text-align: center;
+                color: #777;
+            ">
+
+                You don't own any items yet.
+
+                <br><br>
+
+                Visit the Catalog to get started.
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+
+/* ================= SAVE AVATAR ================= */
+
+function saveAvatar() {
+
+    saveData();
+
+    alert(
+        "Your avatar has been saved."
+    );
+
+}
+
+
+/* ================= LOGIN ================= */
+
+function login() {
+
+    const username =
+        prompt(
+            "Enter a username:"
+        );
+
+
+    if (!username) return;
+
+
+    user.username =
+        username.substring(0, 20);
+
+
+    saveData();
+
+    updateUI();
+
+}
+
+
+/* ================= GAMES ================= */
+
+function playGame(name) {
+
+    alert(
+        name +
+        " will launch here once the Three.js game is connected."
+    );
+
+}
+
+
+function startBrowserGame() {
+
+    alert(
+        "The browser game engine will be connected here."
+    );
+
+}
+
+
+/* ================= NAV BUTTONS ================= */
+
+document
+    .querySelectorAll(
+        ".nav button"
+    )
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                showPage(
+                    button.dataset.page
+                );
+
+            }
+        );
+
+    });
+
+
+/* ================= START ================= */
+
+loadData();
+
+updateUI();
+
+renderCatalog();
+
+renderAvatarItems();
+
+showPage("home");
+
+</script>
+
+</body>
+</html>
+```
